@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ScoutSettings>
+	<DisableImages>false</DisableImages>
+	<SimpleMessage>false</SimpleMessage>
+	<RarityStars>true</RarityStars>
+	<ScoutMaster></ScoutMaster>
+	<Copper>0.65</Copper>
+	<Silver>0.25</Silver>
+	<Gold>0.04</Gold>
+	<Platinum>0.03</Platinum>
+	<Platinum6>0.03</Platinum6>
+	<RecordCrystal>
+		<RecordCrystal rate="0.03"/>
+		<RecordCrystal rate="0.37"/>
+		<RecordCrystal rate="0.4"/>
+		<RecordCrystal rate="0.1"/>
+		<RecordCrystal rate="0.035"/>
+		<RecordCrystal rate="0.035"/>
+		<RecordCrystal rate="0.01"/>
+		<RecordCrystal rate="0.01"/>
+		<RecordCrystal rate="0.005"/>
+		<RecordCrystal rate="0.005"/>
+	</RecordCrystal>
+	<CirculatingRecordCrystal>
+		<CirculatingRecordCrystal rate="0.36"/>
+		<CirculatingRecordCrystal rate="0.6"/>
+		<CirculatingRecordCrystal rate="0.025"/>
+		<CirculatingRecordCrystal rate="0.01"/>
+		<CirculatingRecordCrystal rate="0.005"/>
+	</CirculatingRecordCrystal>
+</ScoutSettings>

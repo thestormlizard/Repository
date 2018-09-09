@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<CommandSettings>
+	<CommandPrefix>$</CommandPrefix>
+	<DeleteUserMessage>false</DeleteUserMessage>
+	<MainChannel></MainChannel>
+	<BlacklistedChannels>
+	</BlacklistedChannels>
+	<WhitelistedChannels>
+	</WhitelistedChannels>
+</CommandSettings>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ShopSettings>
+	<MaxShopLimit>20</MaxShopLimit>
+	<ShopItems>
+		<ShopItem name="Memory Diamond A" price="0.99" amount="5"/>
+		<ShopItem name="Memory Diamond B" price="4.99" amount="25"/>
+		<ShopItem name="Memory Diamond C" price="7.99" amount="50"/>
+		<ShopItem name="Memory Diamond D" price="17.99" amount="125"/>
+		<ShopItem name="Memory Diamond E" price="33.99" amount="250"/>
+		<ShopItem name="Memory Diamond F" price="44.99" amount="360"/>
+		<ShopItem name="Memory Diamond G" price="79.99" amount="700"/>
+	</ShopItems>
+</ShopSettings>

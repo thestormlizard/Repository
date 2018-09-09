@@ -1,0 +1,2347 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<banners>
+    <!-->
+    WARNING
+        If the banner uses symbols (★ or & for example) and is a Step Up, Record Crystal, or Step Up v2 scout,
+        refrain from using those symbols and use the names instead.
+
+        i.e.
+        - "5★ Upgrade Vote Scout" -> "5 Star Upgrade Vote Scout"
+        - "Memory of Friendship & Passing of Time" -> "Memory of Friendship and Passing of Time"
+
+        Doing this will ensure that there will be no errors when parsing the Banners.xml file.
+    <-->
+
+    <!-->
+    BANNER TYPES
+        As of this writing, The following banner types are available:
+
+        <type>
+        0) Normal (Static scout rates, nothing special)
+        1) Step Up (Increased gold character scout rate per step, resets at 5)
+        2) Record Crystal (Get record crystals every multi scout to use in a guaranteed scout)
+        3) Step Up v2 (Increased platinum character scout rate per step, repeats at 6)
+        4) Birthday Step Up (125 MD scout on step 1, 2.0x rates for gold and platinum on step 3, resets at 3)
+        5) Record Crystal v2 (Same as Record Crystal, but 125 MD for the first scout.)
+        6) Memorial Scout (Static scout rates, single pulls only.)
+        7) Step Up v3 (125 MD scout on step 1, 2.0x rates for platinum on step 3, resets at 3)
+        8) Record Crystal v3 (Same as Record Crystal v2, but get 1-5 RC back every record crystal scout)
+        9) Event (Free, single pulls only, and no hacking crystals on duplicate characters)
+        10) SAO Game 5th Anniversary Step Up (Same rates as Step Up v2, just different MD costs)
+        11) Record Crystal v4 (Same as Record Crystal v3, but platinum base rates have increased by 1.5x)
+        12) Step Up v4 (Same as Step Up v2, but 50% discount on Step 1 and 3 and increased platinum base rates by 1.5x)
+        13) Step Up v5 (Same as Step Up v2, but 50% discount on Step 1 and increased platinum base rates by 1.5x)
+        14) SAO Game 5th Anniversary Step Up v2 (Same as SAO Game 5th Anniversary Step Up, but increased platinum base rates by 1.5x)
+        15) Step Up v6 (Same as Step Up v3, but rates for platinum characters are 1.5x higher.)
+        16) SAO Game 5th Anniversary Step Up v3 (Same as SAO Game 5th Anniversary Step Up, but a gold+ rarity character is guaranteed on the first step.)
+        17) Step Up v7 (Same as Step Up v2, but 50% discount on Step 1, 200 MD Step 3 w/ 1.5x increased rates for platinum6 characters, guaranteed platinum6 character on step 5, and repeating step 6 with 2x platinum6 rates.)
+
+        <wepType>
+        0) Normal (Static scout rates, nothing special)
+        1) Step Up (100 MD scout on step 1, 2.0x rates for gold weapon on step 3)
+        2) GGO Step Up (100 MD scout w/ guaranteed Copper+ Automatic Rifle, 1.5x rates for Gold on step 3,
+                        Guaranteed Gold on step 5, and 2.0x rates for Gold on step 6, repeats at 6)
+        3) Step Up v2 (100 MD scout step 1, 100 MD + 1.5x rates for gold weapon on step 3, guaranteed gold weapon step 5, and 2.0x rates for gold weapons on step 6, repeats at 6)
+
+        <include>
+        - "GoldBanner" (Included in the pool for Record Crystal guaranteed scouts)
+        - "GoldBannerv2" (Included in the pool for Record Crystal v2 guaranteed scouts)
+        - "PlatinumBanners" (Included in the pool for Step Up v7 scouts)
+
+        <exclude>
+        Use this tag to stop a certain character from being used in GoldBanner/GoldBannerv2/PlatinumBanners/etc
+        Type prefix, name, and rarity separated by semicolons. Any spaces must be turned into underscores.
+        Only functions for Step Up v7 (17) and higher banner types.
+        i.e: <exclude>Black_Swordsman;Kirito;4</exclude>
+
+        Type the desired number between the <type></type> area in a banner.
+    <-->
+
+    <Banner id="1">
+        <name>Start Dash</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Black Swordsman" char="Kirito" rarity="4"/>
+        <Character prefix="Lightning Flash" char="Asuna" rarity="4"/>
+        <Character prefix="Dragon Tamer" char="Silica" rarity="4"/>
+        <Character prefix="Mace Master" char="Lisbeth" rarity="4"/>
+        <Character prefix="Furinkazan" char="Klein" rarity="4"/>
+        <Character prefix="Brawny Axeman" char="Agil" rarity="4"/>
+        <Character prefix="Storm Mage" char="Leafa" rarity="4"/>
+        <Character prefix="Goddess of Death" char="Sinon" rarity="4"/>
+        <Character prefix="Zekken" char="Yuuki" rarity="4"/>
+        <Character prefix="Treasure Hunter" char="Philia" rarity="4"/>
+        <Character prefix="MHCP-002" char="Strea" rarity="4"/>
+        <Character prefix="Multi-Wielder" char="Rain" rarity="4"/>
+        <Character prefix="Star Scientist" char="Seven" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Elucidator x Dark Repulser" rarity="4"/>
+        <Weapon name="Lambent Light" rarity="4"/>
+        <Weapon name="Ebony Dagger" rarity="4"/>
+        <Weapon name="Star Mace" rarity="4"/>
+        <Weapon name="Classic Bound Tachi" rarity="4"/>
+        <Weapon name="Atom Smasher" rarity="4"/>
+        <Weapon name="Tempest Sabre" rarity="4"/>
+        <Weapon name="Hectate II" rarity="4"/>
+        <Weapon name="Obsidian Sword" rarity="4"/>
+        <Weapon name="Sword Breaker" rarity="4"/>
+        <Weapon name="Invaria" rarity="4"/>
+        <Weapon name="Sword of Hogni" rarity="4"/>
+        <Weapon name="Soul of Shamrock" rarity="4"/>
+    </Banner>
+
+    <Banner id="2">
+        <name>Alfheim Online Reborn</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Skill Connect" char="Kirito" rarity="4"/>
+        <Character prefix="Undine Healer" char="Asuna" rarity="4"/>
+        <Character prefix="Fairy Dragon Tamer" char="Silica" rarity="4"/>
+        <Character prefix="Fairy Blacksmith" char="Lisbeth" rarity="4"/>
+        <Character prefix="Cool-Headed Sniper" char="Sinon" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Unity Walks x Divination" rarity="4"/>
+        <Weapon name="Yggdrasil Bough" rarity="4"/>
+        <Weapon name="Giardino" rarity="4"/>
+        <Weapon name="Gridavol" rarity="4"/>
+        <Weapon name="L'arc Qui ne Faut" rarity="4"/>
+    </Banner>
+
+    <Banner id="3">
+        <name>70000 Pre-Registered Users Celebration Present</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Nightwear" char="Asuna" rarity="4"/>
+    </Banner>
+
+    <Banner id="4">
+        <name>The Fairy Daughter</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Fairy Dance" char="Kirito" rarity="4"/>
+    </Banner>
+
+    <Banner id="5">
+        <name>Japan Version Wind Elemental Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Gale Dancer" char="Asuna" rarity="4"/>
+        <Character prefix="Cait Sith Cyclone" char="Silica" rarity="4"/>
+        <Character prefix="Stormbringer" char="Lisbeth" rarity="4"/>
+        <Character prefix="Priestress of the Winds" char="Leafa" rarity="4"/>
+        <Character prefix="Absolute Wind" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Ventus Cyclone Sword" rarity="4"/>
+        <Weapon name="Butterfly Wing" rarity="4"/>
+        <Weapon name="Hurricane Breaker" rarity="4"/>
+        <Weapon name="Wind of Grace" rarity="4"/>
+        <Weapon name="Storm Slicer" rarity="4"/>
+    </Banner>
+
+    <Banner id="6">
+        <name>Japan Version 2016 Halloween Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Bloodbond" char="Kirito" rarity="4"/>
+        <Character prefix="Gremlins at Midnight" char="Asuna" rarity="4"/>
+        <Character prefix="Young Witch of the Old Castle" char="Silica" rarity="4"/>
+        <Character prefix="Vampire Empress" char="Lisbeth" rarity="4"/>
+        <Character prefix="Gremlin Attack" char="Sinon" rarity="4"/>
+        <Character prefix="Trick or Treat" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Solar Repulsor x Devil Silencer" rarity="4"/>
+        <Weapon name="Pumpkin Hammer" rarity="4"/>
+        <Weapon name="Black Cat" rarity="4"/>
+        <Weapon name="Devil's Slave" rarity="4"/>
+        <Weapon name="Devil's Spread" rarity="4"/>
+        <Weapon name="Treat Hunter" rarity="4"/>
+    </Banner>
+
+    <Banner id="7">
+        <name>Beware of the Kobold Trickster</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Rejoicing Witch" char="Leafa" rarity="4"/>
+    </Banner>
+
+    <Banner id="8">
+        <name>Japan Version Earth Elemental Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Beautiful Blossom" char="Silica" rarity="4"/>
+        <Character prefix="Harvest Priestress" char="Lisbeth" rarity="4"/>
+        <Character prefix="Protector of Eden" char="Leafa" rarity="4"/>
+        <Character prefix="Blessing of Eden" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Gaia Knife" rarity="4"/>
+        <Weapon name="Harvest" rarity="4"/>
+        <Weapon name="Eden's Stave" rarity="4"/>
+        <Weapon name="Eden's Edge" rarity="4"/>
+    </Banner>
+
+    <Banner id="9">
+        <name>Looking for Big Illusions</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Pole and Line Fishing" char="Sima" rarity="4"/>
+    </Banner>
+
+    <Banner id="10">
+        <name>Japan Version Fire Elemental Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Mage of the Gods" char="Asuna" rarity="4"/>
+        <Character prefix="Swordsman of the Gods" char="Klein" rarity="4"/>
+        <Character prefix="Gunner of the Gods" char="Sinon" rarity="4"/>
+        <Character prefix="Knight of the Gods" char="Strea" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Conflagration" rarity="4"/>
+        <Weapon name="Supernova Friction" rarity="4"/>
+        <Weapon name="Explosive Hecate" rarity="4"/>
+        <Weapon name="Ignitia" rarity="4"/>
+    </Banner>
+
+    <Banner id="11">
+        <name>How to Play With Twenty People</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Pure-Hearted Warrior of Flora" char="Sinon" rarity="4"/>
+    </Banner>
+
+    <Banner id="12">
+        <name>Japan Version Camisole Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Nightwear" char="Leafa" rarity="4"/>
+        <Character prefix="Nightwear" char="Yuuki" rarity="4"/>
+        <Character prefix="Nightwear" char="Silica" rarity="4"/>
+        <Character prefix="Nightwear" char="Lisbeth" rarity="4"/>
+        <Character prefix="Nightwear" char="Sinon" rarity="4"/>
+    </Banner>
+
+    <Banner id="13">
+        <name>Japan Version 2016 Christmas Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Fantastic Gift" char="Kirito" rarity="4"/>
+        <Character prefix="Silent Night's Light" char="Asuna" rarity="4"/>
+        <Character prefix="Merry Dragon Tamer" char="Silica" rarity="4"/>
+        <Character prefix="Christmas Artisan" char="Lisbeth" rarity="4"/>
+        <Character prefix="Love Raconteur" char="Leafa" rarity="4"/>
+        <Character prefix="Silent Night Goddess" char="Sinon" rarity="4"/>
+        <Character prefix="Celestial Swordfighter" char="Yuuki" rarity="4"/>
+        <Character prefix="Silent Night Hunter" char="Philia" rarity="4"/>
+        <Character prefix="Yuletide Swordswoman" char="Strea" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Holy Caliber x Jingle Blade" rarity="4"/>
+        <Weapon name="Treasured Rapier" rarity="4"/>
+        <Weapon name="Reindeer Dagger" rarity="4"/>
+        <Weapon name="Jingle All the Way" rarity="4"/>
+        <Weapon name="Radiant Tree" rarity="4"/>
+        <Weapon name="Holy Night's Shot" rarity="4"/>
+        <Weapon name="Ringing Blade" rarity="4"/>
+        <Weapon name="Holy Dagger" rarity="4"/>
+        <Weapon name="Freudeschwert" rarity="4"/>
+    </Banner>
+
+    <Banner id="14">
+        <name>Memories of Christmas</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Happy Memories" char="Sachi" rarity="4"/>
+    </Banner>
+
+    <Banner id="15">
+        <name>Japan Version 2017 New Year Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Dreams in Crimson" char="Asuna" rarity="4"/>
+        <Character prefix="Pure Splendor" char="Silica" rarity="4"/>
+        <Character prefix="Beautiful Battledore Player" char="Leafa" rarity="4"/>
+        <Character prefix="Springtime Sniper" char="Sinon" rarity="4"/>
+        <Character prefix="Festive Dancer" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Sunlight Rapier" rarity="4"/>
+        <Weapon name="Blessed Pine" rarity="4"/>
+        <Weapon name="Exorcist's Hairpin" rarity="4"/>
+        <Weapon name="Demonbane Greatbow" rarity="4"/>
+        <Weapon name="Amenohohi" rarity="4"/>
+    </Banner>
+
+    <Banner id="16">
+        <name>Friendship Osechi Dishes</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Bringer of Spring" char="Lisbeth" rarity="4"/>
+    </Banner>
+
+    <Banner id="17">
+        <name>Japan Version Water Elemental Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Elegant Water Warrior" char="Asuna" rarity="4"/>
+        <Character prefix="Tomboy Queen" char="Yuuki" rarity="4"/>
+        <Character prefix="Rushing Torrent" char="Rain" rarity="4"/>
+        <Character prefix="Symphony of the Sea" char="Seven" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Aquarius Edge" rarity="4"/>
+        <Weapon name="Sea God's Mallet" rarity="4"/>
+        <Weapon name="Mercury Edge" rarity="4"/>
+        <Weapon name="Marine Baton" rarity="4"/>
+    </Banner>
+
+    <Banner id="18">
+        <name>Japan Version Hollow Realization Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="True Black" char="Kirito" rarity="4"/>
+        <Character prefix="White Flash" char="Asuna" rarity="4"/>
+        <Character prefix="Bond Sword" char="Leafa" rarity="4"/>
+        <Character prefix="Budding Emotions" char="Premiere" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Elder Sword x Seeker Sword" rarity="4"/>
+        <Weapon name="Hexagramme" rarity="4"/>
+        <Weapon name="Tyrfing" rarity="4"/>
+        <Weapon name="Rusty Nail" rarity="4"/>
+    </Banner>
+
+    <Banner id="19">
+        <name>Japan Version 2017 Valentine's Day Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Enchanting Love" char="Asuna" rarity="4"/>
+        <Character prefix="Unfulfilled Wish" char="Leafa" rarity="4"/>
+        <Character prefix="Choleric Cupid" char="Sinon" rarity="4"/>
+        <Character prefix="Platonic Love" char="Silica" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Brilliant Fleuret" rarity="4"/>
+        <Weapon name="Chocolate Grater" rarity="4"/>
+        <Weapon name="Cupid's Passion" rarity="4"/>
+        <Weapon name="Love Cake Knife" rarity="4"/>
+    </Banner>
+
+    <Banner id="20">
+        <name>Cook in Love</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Made with Love" char="Asuna" rarity="4"/>
+    </Banner>
+
+    <Banner id="21">
+        <name>Japan Version 2017 Setsubun Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Demon Leader" char="Sinon" rarity="4"/>
+    </Banner>
+
+    <Banner id="22">
+        <name>Grand Quest of the Top-Ranked</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Captive Princess" char="Asuna" rarity="4"/>
+    </Banner>
+
+    <Banner id="23">
+        <name>The Accelerating Reality</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Hero's Return" char="Kirito" rarity="4"/>
+        <Character prefix="Heart of Confront" char="Asuna" rarity="4"/>
+        <Character prefix="Efficient Smith" char="Lisbeth" rarity="4"/>
+        <Character prefix="Augmented Tamer" char="Silica" rarity="4"/>
+        <Character prefix="Progressive Gunner" char="Sinon" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Heroic Promise" rarity="4"/>
+        <Weapon name="Courage" rarity="4"/>
+        <Weapon name="Elater" rarity="4"/>
+        <Weapon name="Edge of Repent" rarity="4"/>
+        <Weapon name="Advancer" rarity="4"/>
+    </Banner>
+
+    <Banner id="24">
+        <name>Ordinal Scale Movie Release Celebration</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="AR Idol" char="Yuna" rarity="4"/>
+    </Banner>
+
+    <Banner id="25">
+        <name>Medal Scout - Sword Dance</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Concealed Dual Blades" char="Kirito" rarity="4"/>
+        <Character prefix="Prestige Vice Commander" char="Asuna" rarity="4"/>
+        <Character prefix="Faithful Swordsman" char="Klein" rarity="4"/>
+        <Character prefix="Explosive Axe" char="Agil" rarity="4"/>
+        <Character prefix="Swift Fast Heroine" char="Leafa" rarity="4"/>
+        <Character prefix="Genius of Swordsmith" char="Lisbeth" rarity="4"/>
+        <Character prefix="Yearning Blade" char="Silica" rarity="4"/>
+        <Character prefix="Sword Master" char="Yuuki" rarity="4"/>
+        <Character prefix="Death Bullet" char="Sinon" rarity="4"/>
+        <Character prefix="Bravery Lance" char="Sachi" rarity="4"/>
+    </Banner>
+
+    <Banner id="26">
+        <name>Hooray ★ Love Cheers</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Angel Cheer" char="Yui" rarity="4"/>
+        <Character prefix="Cheer of Love" char="Asuna" rarity="4"/>
+        <Character prefix="Shouting Cheers" char="Silica" rarity="4"/>
+        <Character prefix="Victorious Girl" char="Sinon" rarity="4"/>
+        <Character prefix="Glittering Youth" char="Strea" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Angel Claymore" rarity="4"/>
+        <Weapon name="Lovely Paltian" rarity="4"/>
+        <Weapon name="Twerling Mace" rarity="4"/>
+        <Weapon name="Lilting Horn" rarity="4"/>
+        <Weapon name="Yellow Mangoesh" rarity="4"/>
+    </Banner>
+
+    <Banner id="27">
+        <name>Spring Breeze Hina-Matsuri Festival</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Early Spring Dance" char="Argo" rarity="4"/>
+        <Character prefix="Flower Peach Baby" char="Silica" rarity="4"/>
+        <Character prefix="Pudding Rather Than Praise" char="Premiere" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Paired Blossoms" rarity="4"/>
+        <Weapon name="Blade of Bight Festival" rarity="4"/>
+        <Weapon name="Breeze of the Fortunate Pattern" rarity="4"/>
+    </Banner>
+
+    <Banner id="28">
+        <name>Queen of Chef</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Queen of Chef" char="Rechka" rarity="4"/>
+    </Banner>
+
+    <Banner id="29">
+        <name>Alicization - The Knights' Encounter</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Integrity Knight" char="Alice" rarity="4"/>
+        <Character prefix="Born Genius" char="Eugeo" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Fragrant Olive Sword" rarity="4"/>
+        <Weapon name="Blue Rose Sword" rarity="4"/>
+    </Banner>
+
+    <Banner id="30">
+        <name>Deadly Beautiful Kunoichi</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Shinobi Slash" char="Asuna" rarity="4"/>
+        <Character prefix="Void Runner" char="Leafa" rarity="4"/>
+        <Character prefix="Dark Dancer" char="Lisbeth" rarity="4"/>
+        <Character prefix="Dragon Caster" char="Silica" rarity="4"/>
+        <Character prefix="Umbral Flight" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Sword of Causality" rarity="4"/>
+        <Weapon name="Blade of Demise" rarity="4"/>
+        <Weapon name="Lotus of Dominant" rarity="4"/>
+        <Weapon name="Six-petaled Stave" rarity="4"/>
+        <Weapon name="Ephemeral Edge" rarity="4"/>
+    </Banner>
+
+    <Banner id="31">
+        <name>Enduring Love in Another Space</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Hit Idol of Love and Effort" char="Asuna" rarity="4"/>
+        <Character prefix="Sparkling Teen Idol" char="Leafa" rarity="4"/>
+        <Character prefix="Fascinating MC Performer" char="Lisbeth" rarity="4"/>
+        <Character prefix="Young Idol" char="Silica" rarity="4"/>
+        <Character prefix="Free Style Artist" char="Sinon" rarity="4"/>
+        <Character prefix="Natural Pop Star" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Venus Heart" rarity="4"/>
+        <Weapon name="Shining Nemesis" rarity="4"/>
+        <Weapon name="Glorious Mic" rarity="4"/>
+        <Weapon name="Purple Star Baselard" rarity="4"/>
+        <Weapon name="Cobalt Tristan" rarity="4"/>
+        <Weapon name="Espanda of Sword Dance" rarity="4"/>
+    </Banner>
+
+    <Banner id="32">
+        <name>Idol Like Ticket VIP Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Up-and-coming Tiny Idol" char="Yui" rarity="4"/>
+    </Banner>
+
+    <Banner id="33">
+        <name>Survival Battle on Desert</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Foxy Priestress" char="Silica" rarity="4"/>
+    </Banner>
+
+    <Banner id="34">
+        <name>Blooming School Life</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Sakura Romance" char="Strea" rarity="4"/>
+        <Character prefix="Born in Sakura Season" char="Yui" rarity="4"/>
+        <Character prefix="Blossom of Youth" char="Philia" rarity="4"/>
+
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Sakura Rain Bow" rarity="4"/>
+        <Weapon name="Sakura Sword" rarity="4"/>
+        <Weapon name="Sakura Mace" rarity="4"/>
+    </Banner>
+
+    <Banner id="35">
+        <name>Princess from the Virtual World</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Lightning Dance" char="Asuna" rarity="4"/>
+        <Character prefix="Ephemeral Feelings" char="Leafa" rarity="4"/>
+        <Character prefix="My Little Lover" char="Silica" rarity="4"/>
+        <Character prefix="Dangerous Kiss" char="Sinon" rarity="4"/>
+        <Character prefix="Pearl Tears" char="Yui" rarity="4"/>
+        <Character prefix="Eccentric Riding Hood" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Glass Sword" rarity="4"/>
+        <Weapon name="Mermaid Knife" rarity="4"/>
+        <Weapon name="Tulip Mace" rarity="4"/>
+        <Weapon name="Apple Shooter" rarity="4"/>
+        <Weapon name="Butterfly Rapier" rarity="4"/>
+        <Weapon name="Red Wolf Buster" rarity="4"/>
+    </Banner>
+
+    <Banner id="36">
+        <name>Half Year Celebration Vote Scout</name>
+        <type>0</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Gunner of the Gods" char="Sinon" rarity="4"/>
+        <Character prefix="Zekken" char="Yuuki" rarity="4"/>
+        <Character prefix="Absolute Wind" char="Yuuki" rarity="4"/>
+        <Character prefix="True Black" char="Kirito" rarity="4"/>
+        <Character prefix="Black Swordsman" char="Kirito" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Explosive Hecate +1" rarity="4"/>
+        <Weapon name="Obsidian Sword +1" rarity="4"/>
+        <Weapon name="Storm Slicer +1" rarity="4"/>
+        <Weapon name="Elder Sword x Seeker Sword +1" rarity="4"/>
+        <Weapon name="Elucidator x Dark Repulser +1" rarity="4"/>
+    </Banner>
+
+    <Banner id="37">
+        <name>To Your Heart - Maid in Balmy Breeze</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Parlor Maid" char="Rain" rarity="4"/>
+        <Character prefix="Kitchen Maid" char="Asuna" rarity="4"/>
+        <Character prefix="Mellow Maid" char="Leafa" rarity="4"/>
+        <Character prefix="Omniscient Maid" char="Seven" rarity="4"/>
+        <Character prefix="Stillroom Maid" char="Sinon" rarity="4"/>
+        <Character prefix="Fledgling Tweeny" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Tea Time Saber" rarity="4"/>
+        <Weapon name="Candle Stick" rarity="4"/>
+        <Weapon name="Crested Espada" rarity="4"/>
+        <Weapon name="Sugar Kukuri" rarity="4"/>
+        <Weapon name="Sweet Shooter" rarity="4"/>
+        <Weapon name="Smash Brush" rarity="4"/>
+    </Banner>
+
+    <Banner id="38">
+        <name>Alicization - Integration Beginning</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Golden Knight" char="Alice" rarity="4"/>
+        <Character prefix="Blue Silver Knight" char="Eugeo" rarity="4"/>
+    </Banner>
+
+    <Banner id="39">
+        <name>Get up Nerve in Virtual World</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Hide-and-seek Girl" char="Sphica" rarity="4"/>
+    </Banner>
+
+    <Banner id="40">
+        <name>Beautiful Girls Playing in the Water</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Smile on Waterfront" char="Lisbeth" rarity="4"/>
+        <Character prefix="Summer Girl" char="Suguha" rarity="4"/>
+        <Character prefix="Pure Hunter Soul" char="Philia" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Cox Hammer" rarity="4"/>
+        <Weapon name="Fisher's Sword" rarity="4"/>
+        <Weapon name="Splash Dagger" rarity="4"/>
+    </Banner>
+
+    <Banner id="41">
+        <name>Poetry of Constellation</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Libra" char="Asuna" rarity="4"/>
+        <Character prefix="Leo" char="Sinon" rarity="4"/>
+        <Character prefix="Gemini" char="Yuuki" rarity="4"/>
+        <Character prefix="Aries" char="Leafa" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Libra Hastam" rarity="4"/>
+        <Weapon name="Leo Hastam" rarity="4"/>
+        <Weapon name="Gemini Gradius" rarity="4"/>
+        <Weapon name="Aries Gradius" rarity="4"/>
+    </Banner>
+
+    <Banner id="42">
+        <name>Eternal Love - Dreaming Brides</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Fragrant Olive in June" char="Alice" rarity="4"/>
+        <Character prefix="Promise at that Time" char="Asuna" rarity="4"/>
+        <Character prefix="The Kiss" char="Leafa" rarity="4"/>
+        <Character prefix="Blessed Breath" char="Silica" rarity="4"/>
+        <Character prefix="Stiletto Heel Bride" char="Sinon" rarity="4"/>
+        <Character prefix="Bouquet Toss" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="June Blade" rarity="4"/>
+        <Weapon name="Eternal Symphony" rarity="4"/>
+        <Weapon name="Wishing Bouquet" rarity="4"/>
+        <Weapon name="Kiss of Cupid" rarity="4"/>
+        <Weapon name="Promised Heart" rarity="4"/>
+    </Banner>
+
+    <Banner id="43">
+        <name>Lives Drawn in the Virtual World</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Genius Creator" char="Yuuki" rarity="4"/>
+    </Banner>
+
+    <Banner id="44">
+        <name>Recalling Moments</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Heart Flash" char="Asuna" rarity="4"/>
+        <Character prefix="Resurgent Sword" char="Kirito" rarity="4"/>
+        <Character prefix="Faroff Fencer" char="Suguha" rarity="4"/>
+    </Banner>
+
+    <Banner id="45">
+        <name>Workers' Cosplay Paradise</name>
+        <type>0</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Time of Injection" char="Asuna" rarity="4"/>
+        <Character prefix="Attention Please" char="Silica" rarity="4"/>
+        <Character prefix="Novice Police" char="Sinon" rarity="4"/>
+        <Character prefix="Spartan Female Teacher" char="Strea" rarity="4"/>
+        <Character prefix="All Aboard" char="Yui" rarity="4"/>
+        <Character prefix="Roller Waitress" char="Yuna" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Injection Rapier" rarity="4"/>
+        <Weapon name="Airplane Dagger" rarity="4"/>
+        <Weapon name="Police Shot" rarity="4"/>
+        <Weapon name="Wisdom Spear" rarity="4"/>
+        <Weapon name="Railway Sword" rarity="4"/>
+        <Weapon name="Parfait Club" rarity="4"/>
+    </Banner>
+
+    <Banner id="46">
+        <name>Raindrops Concerto</name>
+        <type>1</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Raindrops Girl" char="Rain" rarity="4"/>
+        <Character prefix="Indoor Gamer" char="Sakuya" rarity="4"/>
+        <Character prefix="Rainy Season Enjoyment" char="Leafa" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Dual Hydrangea Sword" rarity="4"/>
+        <Weapon name="Rain-making Long Bow" rarity="4"/>
+        <Weapon name="Paraguas Sword" rarity="4"/>
+    </Banner>
+
+    <Banner id="47">
+        <name>Tropical Dream</name>
+        <type>1</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Summer Princess" char="Alice" rarity="4"/>
+        <Character prefix="Tropical Lover" char="Asuna" rarity="4"/>
+        <Character prefix="Surfer" char="Eugeo" rarity="4"/>
+        <Character prefix="Tropical Beach Boy" char="Kirito" rarity="4"/>
+        <Character prefix="Sunny Summer Girl" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Sea Horse Saber" rarity="4"/>
+        <Weapon name="Hibiscus Cutter" rarity="4"/>
+        <Weapon name="Anchor's Sword" rarity="4"/>
+        <Weapon name="Dark Palm Sword x Denfare Slicer" rarity="4"/>
+        <Weapon name="Beach Stinger" rarity="4"/>
+    </Banner>
+
+    <Banner id="48">
+        <name>Summer Ticket VIP Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Tropical dB" char="Yuna" rarity="4"/>
+    </Banner>
+
+    <Banner id="49">
+        <name>Promised Night of the Stars</name>
+        <type>1</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Celestial Dancer" char="Yuuki" rarity="4"/>
+        <Character prefix="Starlight Prayer" char="Silica" rarity="4"/>
+        <Character prefix="Promise of Reunion" char="Philia" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Dual Galactic Lights" rarity="4"/>
+        <Weapon name="Fairy's Star" rarity="4"/>
+        <Weapon name="Oathkeeper" rarity="4"/>
+    </Banner>
+
+    <Banner id="50">
+        <name>Yukata Night</name>
+        <type>2</type>
+        <wepType>0</wepType>
+        <include>GoldBanners</include>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Illuminating Weeping Willow" char="Asuna" rarity="4"/>
+        <Character prefix="Blossom Shower" char="Rain" rarity="4"/>
+        <Character prefix="Zinnia Melody" char="Seven" rarity="4"/>
+        <Character prefix="Firey Morning Glory" char="Sinon" rarity="4"/>
+        <Character prefix="Dusk Lespedeza" char="Suguha" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Willow Figure" rarity="4"/>
+        <Weapon name="Dual Melodious Twins" rarity="4"/>
+        <Weapon name="Zinnia Bouquet" rarity="4"/>
+        <Weapon name="Summer Bloomer" rarity="4"/>
+        <Weapon name="Lespedeza Dewdrop" rarity="4"/>
+    </Banner>
+
+    <Banner id="51">
+        <name>Char. Enhancement Vote Scout</name>
+        <type>1</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Shinobi Slash" char="Asuna" rarity="4"/>
+        <Character prefix="Gemini" char="Yuuki" rarity="4"/>
+        <Character prefix="Lightning Dance" char="Asuna" rarity="4"/>
+        <Character prefix="Summer Girl" char="Suguha" rarity="4"/>
+        <Character prefix="Angel Cheer" char="Yui" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Sword of Causality +1" rarity="4"/>
+        <Weapon name="Gemini Gradius +1" rarity="4"/>
+        <Weapon name="Glass Sword +1" rarity="4"/>
+        <Weapon name="Fisher's Sword +1" rarity="4"/>
+        <Weapon name="Angel Claymore +1" rarity="4"/>
+    </Banner>
+
+    <Banner id="52">
+        <name>Korea Version Release</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Black Wing" char="Kirito" rarity="4"/>
+    </Banner>
+
+    <Banner id="53">
+        <name>Beaming Summer Gals</name>
+        <type>2</type>
+        <wepType>0</wepType>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Healing Beauty" char="Asuna" rarity="4"/>
+        <Character prefix="Summer Sunshine" char="Lisbeth" rarity="4"/>
+        <Character prefix="Sunflower Girl" char="Silica" rarity="4"/>
+        <Character prefix="Mischievous Summer Chick" char="Sinon" rarity="4"/>
+        <Character prefix="Midsummer Babe" char="Suguha" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Lily Main Gauche" rarity="4"/>
+        <Weapon name="Beach Buster" rarity="4"/>
+        <Weapon name="Sunflower Edge" rarity="4"/>
+        <Weapon name="Marin Shot" rarity="4"/>
+        <Weapon name="Island Spear" rarity="4"/>
+    </Banner>
+
+    <Banner id="54">
+        <name>Countdown VIP Ticket Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="True Heart" char="Yui" rarity="4"/>
+    </Banner>
+
+    <Banner id="55">
+        <name>Summer Night Festa</name>
+        <type>1</type>
+        <wepType>0</wepType>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Good Street Vendor" char="Lisbeth" rarity="4"/>
+        <Character prefix="Summer Night Shout" char="Leafa" rarity="4"/>
+        <Character prefix="Kagura Dance" char="Premiere" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Windcatcher" rarity="4"/>
+        <Weapon name="Raijin" rarity="4"/>
+        <Weapon name="Divine Shiner" rarity="4"/>
+    </Banner>
+
+    <Banner id="56">
+        <name>In the Stormy Sea - Jolly Roger</name>
+        <type>2</type>
+        <wepType>0</wepType>
+        <include>GoldBannersv2</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Gorgeous Quartermaster" char="Asuna" rarity="4"/>
+        <Character prefix="Lofty Captain" char="Kirito" rarity="4"/>
+        <Character prefix="Radiant First Mate" char="Leafa" rarity="4"/>
+        <Character prefix="Great Sniper on the Lookout" char="Sinon" rarity="4"/>
+        <Character prefix="Intuitive Navigator" char="Yuuki" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Ocean Espada" rarity="4"/>
+        <Weapon name="Inswore Sword x Offshore Sword" rarity="4"/>
+        <Weapon name="Jolly Roger Sabre" rarity="4"/>
+        <Weapon name="Harbor Rifle" rarity="4"/>
+        <Weapon name="Pirate Dagger" rarity="4"/>
+    </Banner>
+
+    <Banner id="57">
+        <name>1st Anniversary Countdown Vote Scout</name>
+        <type>1</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Hero's Return" char="Kirito" rarity="4"/>
+        <Character prefix="Heart of Confront" char="Asuna" rarity="4"/>
+        <Character prefix="Parlor Maid" char="Rain" rarity="4"/>
+        <Character prefix="Golden Knight" char="Alice" rarity="4"/>
+        <Character prefix="Leo" char="Sinon" rarity="4"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Heroic Promise +1" rarity="4"/>
+        <Weapon name="Courage +1" rarity="4"/>
+        <Weapon name="Tea Time Saber +1" rarity="4"/>
+        <Weapon name="Fragrant Olive Sword +1" rarity="4"/>
+        <Weapon name="Leo Hastam +1" rarity="4"/>
+    </Banner>
+
+    <Banner id="58">
+        <name>Birthday Scout - Sinon 8.21</name>
+        <type>1</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Dangerous Kiss" char="Sinon" rarity="4"/>
+        <Character prefix="Stillroom Maid" char="Sinon" rarity="4"/>
+        <Character prefix="Stiletto Heel Bride" char="Sinon" rarity="4"/>
+        <Character prefix="Novice Police" char="Sinon" rarity="4"/>
+        <Character prefix="Progressive Gunner" char="Sinon" rarity="4"/>
+        <Character prefix="Victorious Girl" char="Sinon" rarity="4"/>
+        <Character prefix="Free Style Artist" char="Sinon" rarity="4"/>
+    </Banner>
+
+    <Banner id="59">
+        <name>The Guys are Performing in Memory Defrag</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Intrepid Detective" char="Eugeo" rarity="5"/>
+        <Character prefix="365 Days" char="Kirito" rarity="5"/>
+    </Banner>
+
+    <Banner id="60">
+        <name>Proof of Trust X Bonds of Fate</name>
+        <type>3</type>
+        <wepType>0</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="The Will - Transcending the System" char="Kirito" rarity="5"/>
+        <Character prefix="The Will - Changing the Fate" char="Asuna" rarity="5"/>
+        <Character prefix="The Blade - Facing the Feelings" char="Leafa" rarity="5"/>
+        <Character prefix="The Archer - Overcoming the Past" char="Sinon" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Enlightment x Shadow Eliminator" rarity="4"/>
+        <Weapon name="Dazzling Blink" rarity="4"/>
+        <Weapon name="Eradicate Saber" rarity="4"/>
+        <Weapon name="Gusisnautar" rarity="4"/>
+    </Banner>
+
+    <Banner id="61">
+        <name>Anniversary Ticket VIP Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Holy Sword" char="Heathcliff" rarity="4"/>
+    </Banner>
+
+    <Banner id="62">
+        <name>Alicization - The World Spins With Swords</name>
+        <type>3</type>
+        <wepType>0</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Fragrant Olive Integrity Knight" char="Alice" rarity="5"/>
+        <Character prefix="Blue Rose Integrity Knight" char="Eugeo" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Eternal Immortality" rarity="4"/>
+        <Weapon name="Eternal Ice" rarity="4"/>
+    </Banner>
+
+    <Banner id="63">
+        <name>Memory of Friendship and Passing of Time</name>
+        <type>3</type>
+        <wepType>0</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Heartful Water fairy" char="Asuna" rarity="5"/>
+        <Character prefix="Wish Granter" char="Yuuki" rarity="5"/>
+        <Character prefix="Ingenuous Guardian" char="Silica" rarity="5"/>
+        <Character prefix="Harmony Keeper" char="Lisbeth" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Atlantis Sword" rarity="4"/>
+        <Weapon name="Siderite Sword" rarity="4"/>
+        <Weapon name="Carnvennan" rarity="4"/>
+        <Weapon name="Planetary Mace" rarity="4"/>
+    </Banner>
+
+    <Banner id="64">
+        <name>Chivalric Men's Uproarious Banquet</name>
+        <type>3</type>
+        <wepType>0</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Strong Mind" char="Klein" rarity="5"/>
+        <Character prefix="Band Together" char="Agil" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Akatsuki" rarity="4"/>
+        <Weapon name="Great Number" rarity="4"/>
+    </Banner>
+
+    <Banner id="65">
+        <name>Birthday Scout - Asuna 9.30</name>
+        <type>4</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Lightning Dance" char="Asuna" rarity="5"/>
+        <Character prefix="Heart of Confront" char="Asuna" rarity="4"/>
+        <Character prefix="Cheer of Love" char="Asuna" rarity="4"/>
+        <Character prefix="Shinobi Slash" char="Asuna" rarity="4"/>
+        <Character prefix="Hit Idol of Love and Effort" char="Asuna" rarity="4"/>
+        <Character prefix="Kitchen Maid" char="Asuna" rarity="4"/>
+        <Character prefix="Libra" char="Asuna" rarity="4"/>
+        <Character prefix="Promise at that Time" char="Asuna" rarity="4"/>
+        <Character prefix="Heart Flash" char="Asuna" rarity="4"/>
+        <Character prefix="Time of Injection" char="Asuna" rarity="4"/>
+        <Character prefix="Tropical Lover" char="Asuna" rarity="4"/>
+        <Character prefix="Illuminating Weeping Willow" char="Asuna" rarity="4"/>
+        <Character prefix="Healing Beauty" char="Asuna" rarity="4"/>
+        <Character prefix="Gorgeous Quartermaster" char="Asuna" rarity="4"/>
+    </Banner>
+
+    <Banner id="66">
+        <name>Moonlight Halloween Parade</name>
+        <type>5</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Offer Lifeblood" char="Kirito" rarity="5"/>
+        <Character prefix="Howl at the Moon" char="Eugeo" rarity="5"/>
+        <Character prefix="Midnight Temptation" char="Asuna" rarity="5"/>
+        <Character prefix="Pumpkin Knight" char="Alice" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Demon's Blade x Bat Espada" rarity="4"/>
+        <Weapon name="Werewolf Fang" rarity="4"/>
+        <Weapon name="Nightmare Wand" rarity="4"/>
+        <Weapon name="Pumpkin Blade" rarity="4"/>
+    </Banner>
+
+    <Banner id="67">
+        <name>Halloween Gold Medal VIP Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Wacky Happy Halloween" char="Lisbeth" rarity="4"/>
+    </Banner>
+
+    <Banner id="68">
+        <name>Birthday Scout - Silica 10.4</name>
+        <type>4</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Augmented Tamer" char="Silica" rarity="5"/>
+        <Character prefix="Shouting Cheers" char="Silica" rarity="4"/>
+        <Character prefix="Dragon Caster" char="Silica" rarity="4"/>
+        <Character prefix="Young Idol" char="Silica" rarity="4"/>
+        <Character prefix="My Little Lover" char="Silica" rarity="4"/>
+        <Character prefix="Blessed Breath" char="Silica" rarity="4"/>
+        <Character prefix="Attention Please" char="Silica" rarity="4"/>
+        <Character prefix="Starlight Prayer" char="Silica" rarity="4"/>
+        <Character prefix="Sunflower Girl" char="Silica" rarity="4"/>
+    </Banner>
+
+    <Banner id="69">
+        <name>Alicization Goes on the Air</name>
+        <type>6</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Fragrant Olive Integrity Knight" char="Alice" rarity="5"/>
+        <Character prefix="Blue Rose Integrity Knight" char="Eugeo" rarity="5"/>
+        <Character prefix="Born Genius" char="Eugeo" rarity="4"/>
+        <Character prefix="Integrity Knight" char="Alice" rarity="4"/>
+        <Character prefix="Blue Silver Knight" char="Eugeo" rarity="4"/>
+        <Character prefix="Golden Knight" char="Alice" rarity="4"/>
+        <Character prefix="Surfer" char="Eugeo" rarity="4"/>
+        <Character prefix="Summer Princess" char="Alice" rarity="4"/>
+        <Character prefix="Fragrant Olive in June" char="Alice" rarity="4"/>
+    </Banner>
+
+    <Banner id="70">
+        <name>Birthday Scout - Kirito 10.7</name>
+        <type>4</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Tropical Beach Boy" char="Kirito" rarity="5"/>
+        <Character prefix="Hero's Return" char="Kirito" rarity="4"/>
+        <Character prefix="Resurgent Sword" char="Kirito" rarity="4"/>
+        <Character prefix="Lofty Captain" char="Kirito" rarity="4"/>
+    </Banner>
+
+    <Banner id="71">
+        <name>Happy Halloween Night</name>
+        <type>5</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Vampire in Love" char="Yuuki" rarity="5"/>
+        <Character prefix="Sweet Monster" char="Leafa" rarity="5"/>
+        <Character prefix="Spider Witch" char="Sinon" rarity="5"/>
+        <Character prefix="Witchy Kitty" char="Silica" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Devil Stuff" rarity="4"/>
+        <Weapon name="Machinery Sword" rarity="4"/>
+        <Weapon name="Trick or Bullet" rarity="4"/>
+        <Weapon name="Chat Noir" rarity="4"/>
+    </Banner>
+
+    <Banner id="72">
+        <name>5 Star Upgrade Vote Scout</name>
+        <type>7</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Hero's Return" char="Kirito" rarity="5"/>
+        <Character prefix="Heart of Confront" char="Asuna" rarity="5"/>
+        <Character prefix="Golden Knight" char="Alice" rarity="5"/>
+        <Character prefix="Raindrops Girl" char="Rain" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Heroic Promise +1" rarity="4"/>
+        <Weapon name="Courage +1" rarity="4"/>
+        <Weapon name="Fragrant Olive Sword +1" rarity="4"/>
+        <Weapon name="Dual Hydrangea Sword +1" rarity="4"/>
+    </Banner>
+
+    <Banner id="73">
+        <name>NYCC Memorial Character Present</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Lone Wolf in the Wild" char="Kirito" rarity="5"/>
+    </Banner>
+
+    <Banner id="74">
+        <name>Baton of Friendship! - Sports Festival</name>
+        <type>5</type>
+        <wepType>0</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Reach the Finish Line" char="Asuna" rarity="5"/>
+        <Character prefix="Go for the Top" char="Yui" rarity="5"/>
+        <Character prefix="Flush of Youth" char="Leafa" rarity="5"/>
+        <Character prefix="Never Give Up" char="Lisbeth" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Victory Fleuret" rarity="4"/>
+        <Weapon name="Champion Dagger" rarity="4"/>
+        <Weapon name="Glorious Blade" rarity="4"/>
+        <Weapon name="Winner's Spear" rarity="4"/>
+    </Banner>
+
+    <Banner id="75">
+        <name>Wedding Anniversary - Kirito and Asuna</name>
+        <type>7</type>
+        <wepType>0</wepType>
+        <include>PlatinumBanners</include>
+        <exclude>Promise_at_that_Time;Asuna;5</exclude>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Promise at that Time" char="Kirito" rarity="5"/>
+        <Character prefix="Promise at that Time" char="Asuna" rarity="5"/>
+    </Banner>
+
+    <Banner id="76">
+        <name>Steamy Beauty Bath Time</name>
+        <type>5</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="The Glossy Goddess" char="Asuna" rarity="5"/>
+        <Character prefix="Looking Back Beauty" char="Sinon" rarity="5"/>
+        <Character prefix="Beauty in Secluded Hot Springs" char="Leafa" rarity="5"/>
+        <Character prefix="Autumn Leaf Bath Beauty" char="Silica" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Holy Flower Rapier" rarity="4"/>
+        <Weapon name="Sanctified Beauteous Spear" rarity="4"/>
+        <Weapon name="Red Lacquer Sword" rarity="4"/>
+        <Weapon name="Teal Blue Sword" rarity="4"/>
+    </Banner>
+
+    <Banner id="77">
+        <name>Colored Leaf Gold Medal Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Abounding Spring Water" char="Strea" rarity="4"/>
+    </Banner>
+
+    <Banner id="78">
+        <name>The Two Bonded by Phantom Bullets</name>
+        <type>7</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Swordsman in the Wilderness" char="Kirito" rarity="5"/>
+        <Character prefix="Sniper in Love" char="Sinon" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Tsukikage" rarity="4"/>
+        <Weapon name="Magnificent Hecate" rarity="4"/>
+    </Banner>
+
+    <Banner id="79">
+        <name>The Crimson Trump Card</name>
+        <type>5</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="The King of Poker" char="Kirito" rarity="5"/>
+        <Character prefix="The Queen of Hearts" char="Asuna" rarity="5"/>
+        <Character prefix="The Bunny Ace" char="Yuuki" rarity="5"/>
+        <Character prefix="The Wild Joker" char="Sinon" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Russian Rouge x Judgement Noir" rarity="4"/>
+        <Weapon name="Burning Heart" rarity="4"/>
+        <Weapon name="Jackpot Spada" rarity="4"/>
+        <Weapon name="Destiny Rosso" rarity="4"/>
+    </Banner>
+
+    <Banner id="80">
+        <name>G-Star Exhibition Memorial Character Gift</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Dancing Rose Red" char="Asuna" rarity="5"/>
+    </Banner>
+
+    <Banner id="81">
+        <name>SAO Game Complete Memorial Vote Scout</name>
+        <type>7</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Celestial Dancer" char="Yuuki" rarity="5"/>
+        <Character prefix="Blossom Shower" char="Rain" rarity="5"/>
+        <Character prefix="Fragrant Olive in June" char="Alice" rarity="5"/>
+        <Character prefix="Heart Flash" char="Asuna" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Dual Galactic Lights +1" rarity="4"/>
+        <Weapon name="Dual Melodious Twins +1" rarity="4"/>
+        <Weapon name="June Blade +1" rarity="4"/>
+        <Weapon name="Courage +1" rarity="4"/>
+    </Banner>
+
+    <Banner id="82">
+        <name>Mace Enhancement Memorial Upgrade Scout</name>
+        <type>7</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Bouquet Toss" char="Yuuki" rarity="5"/>
+        <Character prefix="Efficient Smith" char="Lisbeth" rarity="5"/>
+        <Character prefix="My Little Lover" char="Silica" rarity="5"/>
+        <Character prefix="Born in Sakura Season" char="Yui" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Promised Heart +1" rarity="4"/>
+        <Weapon name="Elater +1" rarity="4"/>
+        <Weapon name="Perfect Lover +1" rarity="4"/>
+        <Weapon name="Sakura Mace +1" rarity="4"/>
+    </Banner>
+
+    <Banner id="83">
+        <name>White Christmas - Footsteps in the Snow</name>
+        <type>3</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Gift from Santa" char="Asuna" rarity="5"/>
+        <Character prefix="Visitor in Snow" char="Leafa" rarity="5"/>
+        <Character prefix="Excitement on Christmas Eve" char="Alice" rarity="5"/>
+        <Character prefix="Hasty Reindeer" char="Eugeo" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Present for You" rarity="4"/>
+        <Weapon name="Wreath on Chimney" rarity="4"/>
+        <Weapon name="Twinkle Christmas Eve" rarity="4"/>
+        <Weapon name="Reindeer Horn" rarity="4"/>
+    </Banner>
+
+    <Banner id="84">
+        <name>Christmas Gold Medal Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Santa is Coming" char="Seven" rarity="4"/>
+        <Character prefix="Personal Santa" char="Rain" rarity="4"/>
+    </Banner>
+
+    <Banner id="85">
+        <name>My Heart's Snowfall</name>
+        <type>3</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Guide in Snow" char="Kirito" rarity="5"/>
+        <Character prefix="Snow Blessings" char="Sachi" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Dual Schneesturm" rarity="4"/>
+        <Weapon name="Eiszapfen" rarity="4"/>
+    </Banner>
+
+    <Banner id="86">
+        <name>Starry Night Fairy Santa</name>
+        <type>3</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Snow Sniper" char="Sinon" rarity="5"/>
+        <Character prefix="Thoughts on Snowfall" char="Lisbeth" rarity="5"/>
+        <Character prefix="Holy Tamer" char="Silica" rarity="5"/>
+        <Character prefix="Christmas Miracle" char="Yuuki" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Priere de noel" rarity="4"/>
+        <Weapon name="Mistletoe Kiss" rarity="4"/>
+        <Weapon name="Little Star Edge" rarity="4"/>
+        <Weapon name="Miracle Impact" rarity="4"/>
+    </Banner>
+
+    <Banner id="87">
+        <name>Fateful Showdown - Sticking to Their Guns</name>
+        <type>7</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Knights of the Blood" char="Kirito" rarity="5"/>
+        <Character prefix="Ultimate Defence" char="Heathcliff" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Elucidator Rouge" rarity="4"/>
+        <Weapon name="Insane Ruler" rarity="4"/>
+    </Banner>
+
+    <Banner id="88">
+        <name>New Years Eve Character Gift</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Constant Love" char="Asuna" rarity="5"/>
+    </Banner>
+
+    <Banner id="89">
+        <name>Happy Hatsumoude in Kimono</name>
+        <type>3</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Votive Prayers" char="Asuna" rarity="5"/>
+        <Character prefix="Ring the Bell" char="Alice" rarity="5"/>
+        <Character prefix="Swing a Battledore with Love" char="Sinon" rarity="5"/>
+        <Character prefix="Fly a Shuttlecock with My Heart" char="Lisbeth" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Fluttery Chrysanthemum" rarity="4"/>
+        <Weapon name="Sacred Boundary" rarity="4"/>
+        <Weapon name="Exorcism" rarity="4"/>
+        <Weapon name="Polo" rarity="4"/>
+    </Banner>
+
+    <Banner id="90">
+        <name>Global Ticket Scout - 1st Anniversary of Going Global</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Girl in Chinese Dress" char="Silica" rarity="4"/>
+        <Character prefix="Haiku Composer" char="Kirito" rarity="4"/>
+        <Character prefix="Splash in Dirndl" char="Leafa" rarity="4"/>
+        <Character prefix="Stars and Stripes" char="Asuna" rarity="4"/>
+        <Character prefix="Korean Dress in Breeze" char="Sinon" rarity="4"/>
+    </Banner>
+
+    <Banner id="91">
+        <name>First Play in the New Year's Breeze</name>
+        <type>3</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Realization of Big Wishes" char="Leafa" rarity="5"/>
+        <Character prefix="Fortune comes in at the merry gate" char="Kirito" rarity="5"/>
+        <Character prefix="Auspicious Blue Sky" char="Silica" rarity="5"/>
+        <Character prefix="New Year's Breeze" char="Yuuki" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Flying Butterfly" rarity="4"/>
+        <Weapon name="Oni's Fang" rarity="4"/>
+        <Weapon name="Kamaitachi" rarity="4"/>
+        <Weapon name="Eagle Claw" rarity="4"/>
+    </Banner>
+
+    <Banner id="92">
+        <name>First Priestess Experience</name>
+        <type>3</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Foxy Shrine Maiden" char="Asuna" rarity="5"/>
+        <Character prefix="Sacred Dance" char="Yui" rarity="5"/>
+        <Character prefix="The Unexpected" char="Sinon" rarity="5"/>
+        <Character prefix="Gorgeous Priestess Costume" char="Suguha" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Little Fox" rarity="4"/>
+        <Weapon name="Purification" rarity="4"/>
+        <Weapon name="Amulet" rarity="4"/>
+        <Weapon name="Kagura" rarity="4"/>
+    </Banner>
+
+    <Banner id="93">
+        <name>Leaning on You</name>
+        <type>8</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Stick to your beliefs" char="Kirito" rarity="5"/>
+        <Character prefix="Clear a path for your future" char="Sinon" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Tsukikage" rarity="4"/>
+        <Weapon name="Magnificent Hecate" rarity="4"/>
+    </Banner>
+
+    <Banner id="94">
+        <name>Sweet Chocolatiere - Melt Your Sweetheart</name>
+        <type>8</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Affectionate Chocolatier" char="Asuna" rarity="5"/>
+        <Character prefix="Innocent Chocolatier" char="Yuuki" rarity="5"/>
+        <Character prefix="Lovely Chocolatier" char="Silica" rarity="5"/>
+        <Character prefix="Pure Hearted Chocolatier" char="Lisbeth" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Lapiel de Fleur" rarity="4"/>
+        <Weapon name="Epee Ruban" rarity="4"/>
+        <Weapon name="Pastry Dagger" rarity="4"/>
+        <Weapon name="Candy Flapper" rarity="4"/>
+    </Banner>
+
+    <Banner id="95">
+        <name>Valentines Day Gold Medal Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Spirited Chocolatier" char="Philia" rarity="4"/>
+    </Banner>
+
+    <Banner id="96">
+        <name>Dream Circus - Breathtaking Performances</name>
+        <type>8</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Accompanied By Animals" char="Sinon" rarity="5"/>
+        <Character prefix="Flying Without Wings" char="Leafa" rarity="5"/>
+        <Character prefix="Keep Trying" char="Yui" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Dove Rod" rarity="4"/>
+        <Weapon name="Balloon Lance" rarity="4"/>
+        <Weapon name="Citrine Dagger" rarity="4"/>
+    </Banner>
+
+    <Banner id="97">
+        <name>Sweet Sweet Honey</name>
+        <type>7</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Enchanting Love" char="Asuna" rarity="5"/>
+        <Character prefix="Unfulfilled Wish" char="Leafa" rarity="5"/>
+        <Character prefix="Choleric Cupid" char="Sinon" rarity="5"/>
+        <Character prefix="Platonic Love" char="Silica" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Treasured Rapier +1" rarity="4"/>
+        <Weapon name="Chocolate Grater +1" rarity="4"/>
+        <Weapon name="Cupid's Passion +1" rarity="4"/>
+        <Weapon name="Love Cake Knife +1" rarity="4"/>
+    </Banner>
+
+    <Banner id="98">
+        <name>Fatal Bullet - Unstoppable Force</name>
+        <type>8</type>
+        <wepType>2</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Flash Shooter" char="Asuna" rarity="5"/>
+        <Character prefix="Gale Gunner" char="Leafa" rarity="5"/>
+        <Character prefix="Dragon Tamer in the Wild" char="Silica" rarity="5"/>
+        <Character prefix="Stout Heart in the World of Steel" char="Lisbeth" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="SPB Rapier" rarity="4"/>
+        <Weapon name="Sylph Type-A" rarity="4"/>
+        <Weapon name="Pink Camouflage LZ" rarity="4"/>
+        <Weapon name="Sturm KZ" rarity="4"/>
+    </Banner>
+
+    <Banner id="99">
+        <name>Fatal Bullet Release Login Bonus CP</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Seeking Strength" char="Kureha" rarity="5"/>
+    </Banner>
+
+    <Banner id="100">
+        <name>Aincrad Idol Singer</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Sweet Idol Singer" char="Yuna" rarity="4"/>
+    </Banner>
+
+    <Banner id="101">
+        <name>Global 1st Anniversary 5 Star Upgrade Vote Scout</name>
+        <type>7</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Kagura Dance" char="Premiere" rarity="5"/>
+        <Character prefix="Gemini" char="Yuuki" rarity="5"/>
+        <Character prefix="Integrity Knight" char="Alice" rarity="5"/>
+        <Character prefix="Indoor Gamer" char="Sakuya" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Divine Shiner +1" rarity="4"/>
+        <Weapon name="Gemini Gradius +2" rarity="4"/>
+        <Weapon name="Fragrant Olive Sword +2" rarity="4"/>
+        <Weapon name="Rain-making Long Bow +1" rarity="4"/>
+    </Banner>
+
+    <Banner id="102">
+        <name>Ordinal Scale 1st Movie Release Anniversary - Reawakened Memories</name>
+        <type>8</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Strong Faith" char="Kirito" rarity="5"/>
+        <Character prefix="Robust Faith" char="Asuna" rarity="5"/>
+        <Character prefix="Ordinal Number 2nd" char="Eiji" rarity="5"/>
+        <Character prefix="Shifting Idol Singer" char="Yuna" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Eternal Promise" rarity="4"/>
+        <Weapon name="Deep Courage" rarity="4"/>
+        <Weapon name="Sword of Nautilus" rarity="4"/>
+        <Weapon name="Emotiongraphy" rarity="4"/>
+    </Banner>
+
+    <Banner id="103">
+        <name>OS Gold Medal Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Tied Together" char="Yuuki" rarity="4"/>
+    </Banner>
+
+    <Banner id="104">
+        <name>Comeback - Spring Breeze Hina-Matsuri Festival</name>
+        <type>7</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Early Spring Dance" char="Argo" rarity="5"/>
+        <Character prefix="Flower Peach Baby" char="Silica" rarity="5"/>
+        <Character prefix="Pudding Rather Than Praise" char="Premiere" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Paired Blossoms +1" rarity="4"/>
+        <Weapon name="Blade of Bight Festival +1" rarity="4"/>
+        <Weapon name="Breeze of the Fortunate Pattern +1" rarity="4"/>
+    </Banner>
+
+    <Banner id="105">
+        <name>The Vernal Memory of Uniform</name>
+        <type>8</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Youthful Days" char="Asuna" rarity="5"/>
+        <Character prefix="The Coveted Life" char="Yuuki" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Cherry Blossom Longbow" rarity="4"/>
+        <Weapon name="Spring Evening Spear" rarity="4"/>
+    </Banner>
+
+    <Banner id="106">
+        <name>Dengeki Spring Festival - 1 Diamond Scout</name>
+        <type>6</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Flush of Youth" char="Leafa" rarity="5"/>
+        <Character prefix="The Glossy Goddess" char="Asuna" rarity="5"/>
+        <Character prefix="The Wild Joker" char="Sinon" rarity="5"/>
+        <Character prefix="Knights of the Blood" char="Kirito" rarity="5"/>
+        <Character prefix="Blue Rose Integrity Knight" char="Eugeo" rarity="5"/>
+        <Character prefix="Strong Mind" char="Klein" rarity="5"/>
+        <Character prefix="Promise at that Time" char="Kirito" rarity="5"/>
+        <Character prefix="Swordsman in the Wilderness" char="Kirito" rarity="5"/>
+        <Character prefix="The Blade - Facing the Feelings" char="Leafa" rarity="5"/>
+        <Character prefix="Wish Granter" char="Yuuki" rarity="5"/>
+        <Character prefix="Fragrant Olive Integrity Knight" char="Alice" rarity="5"/>
+        <Character prefix="Beauty in Secluded Hot Springs" char="Leafa" rarity="5"/>
+        <Character prefix="The Bunny Ace" char="Yuuki" rarity="5"/>
+        <Character prefix="The Will - Transcending the System" char="Kirito" rarity="5"/>
+        <Character prefix="The King of Poker" char="Kirito" rarity="5"/>
+        <Character prefix="The Will - Changing the Fate" char="Asuna" rarity="5"/>
+        <Character prefix="Heartful Water fairy" char="Asuna" rarity="5"/>
+        <Character prefix="Reach the Finish Line" char="Asuna" rarity="5"/>
+        <Character prefix="The Queen of Hearts" char="Asuna" rarity="5"/>
+        <Character prefix="Ingenuous Guardian" char="Silica" rarity="5"/>
+        <Character prefix="Go for the Top" char="Yui" rarity="5"/>
+        <Character prefix="Autumn Leaf Bath Beauty" char="Silica" rarity="5"/>
+        <Character prefix="Band Together" char="Agil" rarity="5"/>
+        <Character prefix="Harmony Keeper" char="Lisbeth" rarity="5"/>
+        <Character prefix="Sniper in Love" char="Sinon" rarity="5"/>
+        <Character prefix="The Archer - Overcoming the Past" char="Sinon" rarity="5"/>
+        <Character prefix="Never Give Up" char="Lisbeth" rarity="5"/>
+        <Character prefix="Looking Back Beauty" char="Sinon" rarity="5"/>
+        <Character prefix="Ultimate Defence" char="Heathcliff" rarity="5"/>
+    </Banner>
+
+    <Banner id="107">
+        <name>Another Gun Gale Online</name>
+        <type>8</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Itsy-Bitsy Heroine" char="LLENN" rarity="5"/>
+        <Character prefix="Toxic Beauty" char="Pitohui" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="my darling P." rarity="4"/>
+        <Weapon name="Serpens G-P-1" rarity="4"/>
+    </Banner>
+
+    <Banner id="108">
+        <name>Furry Morphin' Time</name>
+        <type>8</type>
+        <wepType>1</wepType>
+        <include>PlatinumBanners</include>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Foxy Beauty" char="Asuna" rarity="5"/>
+        <Character prefix="Bashful Tanuki Girl" char="Alice" rarity="5"/>
+        <Character prefix="Innocent Puppy" char="Leafa" rarity="5"/>
+        <Character prefix="Cute Bunny" char="Sinon" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Huli jing Sword" rarity="4"/>
+        <Weapon name="Tanuki Sword" rarity="4"/>
+        <Weapon name="Faithful Dog's Fang" rarity="4"/>
+        <Weapon name="Moon Rabbit's Dagger" rarity="4"/>
+    </Banner>
+
+    <Banner id="109">
+        <name>Awesome Newbie</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Cool Screw" char="Waals" rarity="4"/>
+    </Banner>
+
+    <Banner id="110">
+        <name>Anime Release and TVCM Special</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Charming Rider" char="Sinon" rarity="5"/>
+    </Banner>
+
+    <Banner id="111">
+        <name>SAO Game 5th Anniversary</name>
+        <type>10</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Ingenuous Blessing" char="Strea" rarity="5"/>
+        <Character prefix="Treasure Hunter's Blessing" char="Philia" rarity="5"/>
+    </Banner>
+
+    <Banner id="112">
+        <name>Cutie Pop Rockers - Fairy Magic</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Sweet Voice" char="Asuna" rarity="5"/>
+        <Character prefix="Funky Play" char="Yuuki" rarity="5"/>
+        <Character prefix="Groovy Sound" char="Lisbeth" rarity="5"/>
+        <Character prefix="Angel Tone" char="Silica" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Magical Note" rarity="4"/>
+        <Weapon name="Tricky Spear" rarity="4"/>
+        <Weapon name="Popping Hammer" rarity="4"/>
+        <Weapon name="Melodic Sword" rarity="4"/>
+    </Banner>
+
+    <Banner id="113">
+        <name>Premium Live Ticket VIP Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Shamisen Rock" char="Premiere" rarity="4"/>
+    </Banner>
+
+    <Banner id="114">
+        <name>Bullet Battle Royal</name>
+        <type>12</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Toxic Gun Master" char="Pitohui" rarity="5"/>
+        <Character prefix="Pink in Battle" char="LLENN" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Sylph Type-A" rarity="4"/>
+        <Weapon name="SPB Rapier" rarity="4"/>
+        <Weapon name="Sturm KZ" rarity="4"/>
+        <Weapon name="Pink Camouflage LZ" rarity="4"/>
+    </Banner>
+
+    <Banner id="115">
+        <name>Harmonic Resonance - Rainbow Sky</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Sweet Vocals" char="Seven" rarity="5"/>
+        <Character prefix="Cool Drum Beats" char="Rain" rarity="5"/>
+        <Character prefix="Perfect Play" char="Sinon" rarity="5"/>
+        <Character prefix="Passionate Strumming" char="Leafa" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Music of the Heart" rarity="4"/>
+        <Weapon name="Twin Beats" rarity="4"/>
+        <Weapon name="Heavy Tone" rarity="4"/>
+        <Weapon name="Harmonic Sword" rarity="4"/>
+    </Banner>
+
+    <Banner id="116">
+        <name>Leafa Birthday Scout 4.19.2018</name>
+        <type>13</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="The Blade - Facing the Feelings" char="Leafa" rarity="5"/>
+        <Character prefix="Flush of Youth" char="Leafa" rarity="5"/>
+        <Character prefix="Beauty in Secluded Hot Springs" char="Leafa" rarity="5"/>
+        <Character prefix="Gorgeous Priestess Costume" char="Suguha" rarity="5"/>
+        <Character prefix="Summer Night Shout" char="Leafa" rarity="5"/>
+    </Banner>
+
+    <Banner id="117">
+        <name>SAO Game 5th Anniversary #2</name>
+        <type>14</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Goddess Blessing" char="Premiere" rarity="5"/>
+        <Character prefix="Countless Swords Blessing" char="Rain" rarity="5"/>
+        <Character prefix="Talented Womans Blessing" char="Seven" rarity="5"/>
+    </Banner>
+
+    <Banner id="118">
+        <name>Master Swordsmen in the Battlefield</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Black Master Swordsman" char="Kirito" rarity="5"/>
+        <Character prefix="Nimble Slash" char="Asuna" rarity="5"/>
+        <Character prefix="Sky Bow" char="Sinon" rarity="5"/>
+        <Character prefix="Swifty Slash" char="Leafa" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Dark Rebellion" rarity="4"/>
+        <Weapon name="Neo Atlantis" rarity="4"/>
+        <Weapon name="Heilug Gusisnautar" rarity="4"/>
+        <Weapon name="Eradicate Storm" rarity="4"/>
+    </Banner>
+
+    <Banner id="119">
+        <name>Grenade Gold Medal Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Little Gunner" char="Fukaziroh" rarity="4"/>
+    </Banner>
+
+    <Banner id="120">
+        <name>Hand in Hand - Children's Day</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="I'm not a kid" char="Asuna" rarity="5"/>
+        <Character prefix="Feels like a big sis" char="Yuuki" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Fish Scale Sword" rarity="4"/>
+        <Weapon name="Self Defense Blade" rarity="4"/>
+    </Banner>
+
+    <Banner id="121">
+        <name>Selection Scout - SS3 HP Recovery Characters</name>
+        <type>15</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Raindrops Girl" char="Rain" rarity="5"/>
+        <Character prefix="Born in Sakura Season" char="Yui" rarity="5"/>
+        <Character prefix="Kagura Dance" char="Premiere" rarity="5"/>
+        <Character prefix="Knights of the Blood" char="Kirito" rarity="5"/>
+        <Character prefix="Flash Shooter" char="Asuna" rarity="5"/>
+        <Character prefix="Promise at that Time" char="Kirito" rarity="5"/>
+        <Character prefix="Fragrant Olive in June" char="Alice" rarity="5"/>
+        <Character prefix="Celestial Dancer" char="Yuuki" rarity="5"/>
+        <Character prefix="Promise at that Time" char="Asuna" rarity="5"/>
+        <Character prefix="Summer Night Shout" char="Leafa" rarity="5"/>
+        <Character prefix="Bouquet Toss" char="Yuuki" rarity="5"/>
+        <Character prefix="Indoor Gamer" char="Sakuya" rarity="5"/>
+        <Character prefix="Ultimate Defence" char="Heathcliff" rarity="5"/>
+        <Character prefix="Gale Gunner" char="Leafa" rarity="5"/>
+        <Character prefix="Dragon Tamer in the Wild" char="Silica" rarity="5"/>
+        <Character prefix="Stout Heart in the World of Steel" char="Lisbeth" rarity="5"/>
+        <Character prefix="Sakura Romance" char="Strea" rarity="4"/>
+        <Character prefix="Summer Girl" char="Suguha" rarity="4"/>
+        <Character prefix="The Kiss" char="Leafa" rarity="4"/>
+        <Character prefix="Rainy Season Enjoyment" char="Leafa" rarity="4"/>
+        <Character prefix="Good Street Vendor" char="Lisbeth" rarity="4"/>
+        <Character prefix="Starlight Prayer" char="Silica" rarity="4"/>
+        <Character prefix="Healing Beauty" char="Asuna" rarity="4"/>
+        <Character prefix="Pure Hunter Soul" char="Philia" rarity="4"/>
+        <Character prefix="Blessed Breath" char="Silica" rarity="4"/>
+        <Character prefix="Promise of Reunion" char="Philia" rarity="4"/>
+        <Character prefix="Sunflower Girl" char="Silica" rarity="4"/>
+        <Character prefix="Smile on Waterfront" char="Lisbeth" rarity="4"/>
+        <Character prefix="Summer Sunshine" char="Lisbeth" rarity="4"/>
+        <Character prefix="Mischievous Summer Chick" char="Sinon" rarity="4"/>
+        <Character prefix="Blossom of Youth" char="Philia" rarity="4"/>
+        <Character prefix="Stiletto Heel Bride" char="Sinon" rarity="4"/>
+        <Character prefix="Midsummer Babe" char="Suguha" rarity="4"/>
+    </Banner>
+
+    <Banner id="122">
+        <name>A Rest Day for Gunners</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Little Beauty" char="LLENN" rarity="5"/>
+        <Character prefix="Charming Look" char="Pitohui" rarity="5"/>
+        <Character prefix="Storm Baby" char="Fukaziroh" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Hydro Shooter" rarity="4"/>
+        <Weapon name="Water Burst Rifle" rarity="4"/>
+        <Weapon name="Splash Machine Gun" rarity="4"/>
+    </Banner>
+
+    <Banner id="123">
+        <name>Lisbeth Birthday Scout 5.18.2018</name>
+        <type>13</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Summer Sunshine" char="Lisbeth" rarity="5"/>
+        <Character prefix="Harmony Keeper" char="Lisbeth" rarity="5"/>
+        <Character prefix="Never Give Up" char="Lisbeth" rarity="5"/>
+        <Character prefix="Fly a Shuttlecock with My Heart" char="Lisbeth" rarity="5"/>
+        <Character prefix="Pure Hearted Chocolatier" char="Lisbeth" rarity="5"/>
+    </Banner>
+
+    <Banner id="124">
+        <name>SAO Game 5th Anniversary #3</name>
+        <type>16</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Blessing of Light" char="Asuna" rarity="5"/>
+        <Character prefix="Hero's Blessing" char="Kirito" rarity="5"/>
+    </Banner>
+
+    <Banner id="125">
+        <name>Yuuki Birthday Scout 5.23.2018</name>
+        <type>13</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Sunny Summer Girl" char="Yuuki" rarity="5"/>
+        <Character prefix="Wish Granter" char="Yuuki" rarity="5"/>
+        <Character prefix="The Bunny Ace" char="Yuuki" rarity="5"/>
+        <Character prefix="New Year's Breeze" char="Yuuki" rarity="5"/>
+        <Character prefix="Innocent Chocolatier" char="Yuuki" rarity="5"/>
+    </Banner>
+
+    <Banner id="126">
+        <name>Passionate Bloom</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Unrestrained Emotion" char="Asuna" rarity="5"/>
+        <Character prefix="Unrequited Love" char="Suguha" rarity="5"/>
+        <Character prefix="Fluttering Petals" char="Rain" rarity="5"/>
+        <Character prefix="Hopeful Smile" char="Lisbeth" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Prominence Rose" rarity="4"/>
+        <Weapon name="Carnation Edge" rarity="4"/>
+        <Weapon name="Twin Flame Dahlia" rarity="4"/>
+        <Weapon name="Heart of Gerbera" rarity="4"/>
+    </Banner>
+
+    <Banner id="127">
+        <name>Hairpin Gold Medal Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="A Lone Flower" char="Alice" rarity="4"/>
+    </Banner>
+
+    <Banner id="128">
+        <name>So Psyched - Costume Change</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Flash with Wind" char="Asuna" rarity="5"/>
+        <Character prefix="Magical Bullet" char="Leafa" rarity="5"/>
+        <Character prefix="Illusion Killer" char="Sinon" rarity="5"/>
+        <Character prefix="Sparkling Zekken" char="Yuuki" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Blood Knight Gale" rarity="4"/>
+        <Weapon name="Hecate Wing" rarity="4"/>
+        <Weapon name="Illusion Terminator" rarity="4"/>
+        <Weapon name="Sleeping Light" rarity="4"/>
+    </Banner>
+
+    <Banner id="129">
+        <name>Fellow Soldiers in the Wilderness</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Fellowship on the Field" char="Kirito" rarity="5"/>
+        <Character prefix="Leaning on My Fellow Soldier" char="Sinon" rarity="5"/>
+        <Character prefix="Zekken in the Wilderness" char="Yuuki" rarity="5"/>
+        <Character prefix="MHCP on the Frontline" char="Strea" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Kagemitsu G2" rarity="4"/>
+        <Weapon name="Hecate typeHE" rarity="4"/>
+        <Weapon name="Muramasa G4" rarity="4"/>
+        <Weapon name="Aldebaran STM" rarity="4"/>
+    </Banner>
+
+    <Banner id="130">
+        <name>Girl in Love - Summer Vacation</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Ocean Resort" char="Asuna" rarity="5"/>
+        <Character prefix="Summer Splash" char="Yuuki" rarity="5"/>
+        <Character prefix="Tropical Fruit" char="Silica" rarity="5"/>
+        <Character prefix="Shine Parasol" char="Lisbeth" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Wave Anchor" rarity="4"/>
+        <Weapon name="Twilight Bivalve" rarity="4"/>
+        <Weapon name="Passion Sunshine" rarity="4"/>
+        <Weapon name="Shine Fruit Mace" rarity="4"/>
+    </Banner>
+
+    <Banner id="131">
+        <name>Shell Gold Medal Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Caught My Eye" char="Suguha" rarity="4"/>
+    </Banner>
+
+    <Banner id="132">
+        <name>Devoted Master Swordsmen</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Proud Sword" char="Alice" rarity="5"/>
+        <Character prefix="Trusted Sword" char="Eugeo" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Fragrant Olive Holy Sword" rarity="4"/>
+        <Weapon name="Blue Rose Ice Sword" rarity="4"/>
+    </Banner>
+
+    <Banner id="133">
+        <name>Selection Scout - ATK Up Characters</name>
+        <type>15</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="The King of Poker" char="Kirito" rarity="5"/>
+        <Character prefix="Gorgeous Priestess Costume" char="Suguha" rarity="5"/>
+        <Character prefix="Feels like a big sis" char="Yuuki" rarity="5"/>
+        <Character prefix="The Queen of Hearts" char="Asuna" rarity="5"/>
+        <Character prefix="The Bunny Ace" char="Yuuki" rarity="5"/>
+        <Character prefix="The Wild Joker" char="Sinon" rarity="5"/>
+        <Character prefix="Foxy Shrine Maiden" char="Asuna" rarity="5"/>
+        <Character prefix="Sacred Dance" char="Yui" rarity="5"/>
+        <Character prefix="The Unexpected" char="Sinon" rarity="5"/>
+        <Character prefix="I'm not a kid" char="Asuna" rarity="5"/>
+        <Character prefix="Celestial Dancer" char="Yuuki" rarity="5"/>
+        <Character prefix="Promise of Reunion" char="Philia" rarity="4"/>
+        <Character prefix="Gorgeous Quartermaster" char="Asuna" rarity="4"/>
+        <Character prefix="Cheer of Love" char="Asuna" rarity="4"/>
+        <Character prefix="Victorious Girl" char="Sinon" rarity="4"/>
+        <Character prefix="Shouting Cheers" char="Silica" rarity="4"/>
+        <Character prefix="Glittering Youth" char="Strea" rarity="4"/>
+        <Character prefix="Angel Cheer" char="Yui" rarity="4"/>
+        <Character prefix="Starlight Prayer" char="Silica" rarity="4"/>
+        <Character prefix="Lofty Captain" char="Kirito" rarity="4"/>
+        <Character prefix="Great Sniper on the Lookout" char="Sinon" rarity="4"/>
+        <Character prefix="Radiant First Mate" char="Leafa" rarity="4"/>
+        <Character prefix="Intuitive Navigator" char="Yuuki" rarity="4"/>
+    </Banner>
+
+    <Banner id="134">
+        <name>Monster Strike Mash Up</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Queen of Wonderland" char="Alice" rarity="4"/>
+        <Character prefix="Ark Savior" char="Eugeo" rarity="4"/>
+    </Banner>
+
+    <Banner id="135">
+        <name>Feel the Breeze - Welcome Summer</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Beach Lancer" char="Leafa" rarity="5"/>
+        <Character prefix="Sparkling Gunner" char="Sinon" rarity="5"/>
+        <Character prefix="Dolphin Jumper" char="Rain" rarity="5"/>
+        <Character prefix="Dolphin Rider" char="Seven" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Marine Wind Lance" rarity="4"/>
+        <Weapon name="Summer Soda Shot" rarity="4"/>
+        <Weapon name="Dual Dolphins" rarity="4"/>
+        <Weapon name="Dolphin Thrust" rarity="4"/>
+    </Banner>
+
+    <Banner id="136">
+        <name>Progressive Manga Linked Scout</name>
+        <type>13</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Hero's Achievement" char="Kirito" rarity="5"/>
+        <Character prefix="Light Trajectory" char="Asuna" rarity="5"/>
+    </Banner>
+
+    <Banner id="137">
+        <name>Gods' Toughest Fight with Ragnarok</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Orgulous God" char="Kirito" rarity="5"/>
+        <Character prefix="Goddess of Fertility" char="Asuna" rarity="5"/>
+        <Character prefix="Valkyrie" char="Alice" rarity="5"/>
+        <Character prefix="Unleashed Werewolf" char="Eugeo" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Victorx2" rarity="4"/>
+        <Weapon name="Great Love" rarity="4"/>
+        <Weapon name="Guardian Angel" rarity="4"/>
+        <Weapon name="Ferocious Wolf" rarity="4"/>
+    </Banner>
+
+    <Banner id="138">
+        <name>#2 Countdown Ticket VIP Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="The Oracle Prophet" char="Yui" rarity="4"/>
+    </Banner>
+
+    <Banner id="139">
+        <name>Fierce Fight in the Inferno of the Gods</name>
+        <type>11</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="The Brave War God" char="Leafa" rarity="5"/>
+        <Character prefix="The Death Queen" char="Sinon" rarity="5"/>
+        <Character prefix="Deceiver of the Gods" char="Yuuki" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Ar Averk" rarity="4"/>
+        <Weapon name="And-Lauss" rarity="4"/>
+        <Weapon name="Bal Sverth" rarity="4"/>
+    </Banner>
+
+    <Banner id="140">
+        <name>Heroes in Another World</name>
+        <type>11</type>
+        <wepType>3</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Vindictive Blade" char="Asuna" rarity="5"/>
+        <Character prefix="Masked Swordsman" char="Kirito" rarity="5"/>
+        <Character prefix="The Spirit" char="Leafa" rarity="5"/>
+        <Character prefix="Foreign Girl" char="Silica" rarity="5"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Unnamed Blade" rarity="4"/>
+        <Weapon name="Chaltier" rarity="4"/>
+        <Weapon name="Eidolon, the Immortal" rarity="4"/>
+        <Weapon name="Parasol" rarity="4"/>
+    </Banner>
+
+    <Banner id="141">
+        <name>Tales Of the Rays Collaboration</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Great Spirit" char="Milla" rarity="4"/>
+        <Character prefix="Pure-Minded Master" char="Sorey" rarity="4"/>
+    </Banner>
+
+    <Banner id="142">
+        <name>Tales Of Ticket VIP Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Knight Princess" char="Sinon" rarity="4"/>
+    </Banner>
+
+    <Banner id="143">
+        <name>Sinon Birthday Scout 8.21.2018</name>
+        <type>13</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="The Unexpected" char="Sinon" rarity="5"/>
+        <Character prefix="Swing a Battledore with Love" char="Sinon" rarity="5"/>
+        <Character prefix="Accompanied By Animals" char="Sinon" rarity="5"/>
+        <Character prefix="Cute Bunny" char="Sinon" rarity="5"/>
+        <Character prefix="Perfect Play" char="Sinon" rarity="5"/>
+        <Character prefix="Sky Bow" char="Sinon" rarity="5"/>
+        <Character prefix="The Archer - Overcoming the Past" char="Sinon" rarity="5"/>
+        <Character prefix="Sniper in Love" char="Sinon" rarity="5"/>
+        <Character prefix="Looking Back Beauty" char="Sinon" rarity="5"/>
+        <Character prefix="The Wild Joker" char="Sinon" rarity="5"/>
+        <Character prefix="Clear a path for your future" char="Sinon" rarity="5"/>
+    </Banner>
+
+    <Banner id="144">
+        <name>The Guys Appear in Memory Defrag</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Let's Play Memory Defrag" char="Nobunaga" rarity="6"/>
+        <Character prefix="Happy 2nd Anniversary" char="Yoshitsugu" rarity="6"/>
+    </Banner>
+
+    <Banner id="145">
+        <name>The Crossover World - Timeless Bond</name>
+        <type>17</type>
+        <wepType>1</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Ultrafast Dualblades" char="Kirito" rarity="6"/>
+        <Character prefix="Linked to the Future" char="Asuna" rarity="6"/>
+        <Character prefix="Great Fragrant Olive Tree" char="Alice" rarity="6"/>
+        <Character prefix="Blue Rose in Full Glory" char="Eugeo" rarity="6"/>
+
+        <!--> WEAPON LIST <-->
+        <Weapon name="Innovator x Evil Punisher" rarity="4"/>
+        <Weapon name="Glaring Light" rarity="4"/>
+        <Weapon name="Fragrant Olive Treasured Sword" rarity="4"/>
+        <Weapon name="Blue Rose Treasured Sword" rarity="4"/>
+    </Banner>
+	
+	<Banner id="146">
+        <name>#2 Anniversary Ticket VIP Scout</name>
+        <type>9</type>
+        <wepType>0</wepType>
+
+        <!--> CHARACTER LIST <-->
+        <Character prefix="Another Justice" char="Makoto" rarity="5"/>
+    </Banner>
+</banners>
